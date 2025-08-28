@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RC Car Controller</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/nipplejs@0.9.0/dist/nipplejs.min.js"></script>
+</head>
+<body>
+  <div class="controls">
+    <h1>RC Car Controller</h1>
+    
+    <div class="switches">
+      <div class="switch-item">
+        <label class="switch-label">Power
+          <label class="switch">
+            <input type="checkbox" id="powerToggle">
+            <span class="slider"></span>
+          </label>
+        </label>
+      </div>
+      <div class="switch-item">
+        <label class="switch-label">Bluetooth
+          <label class="switch">
+            <input type="checkbox" id="bluetoothToggle">
+            <span class="slider"></span>
+          </label>
+        </label>
+      </div>
+      <div class="switch-item">
+        <label class="switch-label">Wi-Fi
+          <label class="switch">
+            <input type="checkbox" id="wifiToggle" checked>
+            <span class="slider"></span>
+          </label>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div id="joystick-wrapper"></div>
+  <div id="status">Status: Waiting for input...</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
